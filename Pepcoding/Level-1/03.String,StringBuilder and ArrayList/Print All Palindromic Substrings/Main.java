@@ -4,7 +4,6 @@ import java.util.*;
 public class Main {
 
     public static void solution(String str) {
-        // write your code here
 
         for (int i = 0; i < str.length(); i++) {
             for (int j = i + 1; j <= str.length(); j++) {
