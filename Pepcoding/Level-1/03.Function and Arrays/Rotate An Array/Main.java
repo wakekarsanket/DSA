@@ -17,9 +17,14 @@ public class Main {
             k += a.length;
         }
 
-        reverse(a, 0, a.length - k - 1);
-        reverse(a, a.length - k, a.length - 1);
-        reverse(a, 0, a.length - 1);
+        // reverse(a, 0, a.length-k-1);              //rotate the first half
+        // reverse(a, a.length-k, a.length-1);       //rotate the remaining half
+        // reverse(a, 0, a.length-1);                //rotate the whole array
+
+        // OR
+        reverse(a, 0, a.length - 1);             //first, rotate the whole array
+        reverse(a, 0, k - 1);                    //then rotate first half
+        reverse(a, k, a.length - 1);                //then rotate second half
     }
 
     public static void reverse(int arr[], int li, int ri) {
