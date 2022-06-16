@@ -15,7 +15,7 @@ public class Main {
 
         int lo = 0;
         int hi = arr.length - 1;
-        int floor = -1, ceil = -1;
+        int floor = 0, ceil = 0;
 
         while (lo <= hi) {
             int mid = (lo + hi) / 2;
